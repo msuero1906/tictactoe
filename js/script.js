@@ -1,6 +1,23 @@
+var score = "x";
+var turns =  0;
+var gameEnd = false;
+
+function performLogic(buttonId,tileId){
+    $(buttonId).html(score); 
+     if (score === "x") {
+         score = "o";
+     }
+
+     else if(score ==="o"){
+         score ="x";
+     }
 
 
+}
 
+function draw(){
+    $(h1).html("It's a draw!");
+}
 
 
 
